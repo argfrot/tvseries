@@ -1,0 +1,23 @@
+.intro-container {
+    height: 20vmin;
+    /* background-color: chartreuse; */
+    vertical-align: middle;
+    margin: auto;
+    padding-top: 10%;
+}
+
+.intro {
+    animation: logo-spin infinite 20s linear;
+    background-color: crimson;
+    width: 20%;
+    margin: auto;
+}
+
+@keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
