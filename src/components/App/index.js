@@ -4,6 +4,7 @@ import './App.css';
 import Intro from '../Intro';
 import Counter from '../Counter';
 import Series from  '../../containers/Series';
+import Todo from '../Todo';
 
 class App extends Component {
 
@@ -15,7 +16,8 @@ class App extends Component {
             TV Series List
           </h1>
         </header>
-        {<Intro message="I love TV! And something a bit longer."/>}
+        <Todo />
+        <Intro message="I love TV! And something a bit longer."/>
         <Series />
         <Counter interval={1000} step={1}/>
         <Counter interval={2000} step={5}/>
