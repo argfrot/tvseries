@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Intro from './components/Intro';
-import Counter from './components/Counter';
-import Series from  './containers/Series';
+import Intro from '../Intro';
+import Counter from '../Counter';
+import Series from  '../../containers/Series';
 
 class App extends Component {
 

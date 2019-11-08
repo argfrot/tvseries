@@ -29,14 +29,14 @@ class Counter extends Component {
     }
   }
 
-  pause = (e) => {
+  pause = (event) => {
     if (this.state.timer) {
       clearInterval(this.state.timer);
       this.setState({timer: null, direction: PAUSED});
     }
   }
 
-  play = (e) => {
+  play = (event) => {
     if (!this.state.timer) {
       Math.random() > 0.5 ? this.increment() : this.decrement();
     }
