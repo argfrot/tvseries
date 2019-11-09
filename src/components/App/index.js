@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Intro from '../Intro';
-import Counter from '../Counter';
-import Series from  '../../containers/Series';
-import Todo from '../Todo';
+import Main from '../Main';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
 
@@ -13,14 +11,17 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>
-            TV Series List
+            Reactify
           </h1>
         </header>
-        <Todo />
-        <Intro message="I love TV! And something a bit longer."/>
-        <Series />
-        <Counter interval={1000} step={1}/>
-        <Counter interval={2000} step={5}/>
+        <div className="App-nav">
+          <ol>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/counters/10">Counters</Link></li>
+          <li><Link to="/todo">Todos</Link></li>
+          </ol>
+        </div>
+        <Main />
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SeriesList from '../../components/SeriesList';
+import Intro from '../../components/Intro';
 
 class Series extends Component {
     state = {
@@ -15,6 +16,7 @@ class Series extends Component {
     render() {
         return (
             <div>
+                <Intro message="I love TV! And something a bit longer."/>
                 {/* <p>Results: {this.state.series.length}</p> */}
                 <SeriesList list={this.state.series}/>
             </div>

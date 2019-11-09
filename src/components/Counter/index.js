@@ -46,6 +46,10 @@ class Counter extends Component {
     this.increment();
   }
 
+  componentWillUnmount() {
+    this.pause()
+  }
+
   render() {
     return (
       <div>
